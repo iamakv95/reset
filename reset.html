@@ -1,0 +1,8 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<script>
+  // keep query (?userId=...&secret=...) and forward to the app
+  var q = location.search || "";
+  location.replace("dribblrquiz://auth/reset" + q);
+</script>
+<p>Opening the app… If nothing happens, please reinstall or open the app manually.</p>
